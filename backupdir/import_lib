@@ -1,0 +1,22 @@
+import pip._internal as pip
+
+def import_lib(name):
+    '''
+    Auto pip install
+    '''
+    try:
+        print(f'{name} intalled, we can import it')
+        return __import__(name) # try to import
+    except ImportError:
+        print(f'{name} is not installed, we can install it and try to import')
+        pip.main(['install', name]) # install
+    return __import__(name) # return lib
+
+
+def main():
+    name = 'screen_cls'
+    import_lib(name)
+
+if __name__ == "__main__":
+    main()
+
