@@ -15,12 +15,25 @@ https://pypi.org/project/backupdir/
 import backupdir
 
 # ARCHIVE LOCAL
-SOURCE_DIR = '' # use current dir when SOURCE_DIR = ''
-TARGET_DIR = "D:\\TEMP\\backup"
+SOURCE_DIR = 'D:\\Documents'    # use current dir when SOURCE_DIR = ''
+TARGET_DIR = "E:\\Archive\\Documents"
 
 backupdir.archive_local(SOURCE_DIR, TARGET_DIR)
 
 ```
+
+## Example2:
+```
+import backupdir
+
+# ARCHIVE NETWORK
+SOURCE_DIR = '\\\\192.168.100.1\\source' 
+TARGET_DIR = "\\\\192.168.100.2\\target"
+
+backupdir.archive_local(SOURCE_DIR, TARGET_DIR)
+
+```
+
 
 ### Documentation
 
