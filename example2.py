@@ -6,9 +6,9 @@ https://igorman2005.github.io/
 '''
 import backupdir
 
-# ARCHIVE LOCAL
-SOURCE_DIR = '' # use current dir when SOURCE_DIR = ''
-TARGET_DIR = "D:\\TEMP\\backup"
+# ARCHIVE NETWORK
+SOURCE_DIR = '\\\\192.168.100.1\\source' 
+TARGET_DIR = '\\\\192.168.100.2\\target'
 
 backupdir.archive_local(SOURCE_DIR, TARGET_DIR)
 

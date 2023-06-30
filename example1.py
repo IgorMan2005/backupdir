@@ -8,7 +8,7 @@ import backupdir
 
 # ARCHIVE LOCAL
 SOURCE_DIR = 'D:\\Documents'    # use current dir when SOURCE_DIR = ''
-TARGET_DIR = "E:\\Archive\\Documents"
+TARGET_DIR = 'E:\\Archive\\Documents'
 
 backupdir.archive_local(SOURCE_DIR, TARGET_DIR)
 

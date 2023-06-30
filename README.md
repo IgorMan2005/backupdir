@@ -28,7 +28,7 @@ import backupdir
 
 # ARCHIVE NETWORK
 SOURCE_DIR = '\\\\192.168.100.1\\source' 
-TARGET_DIR = "\\\\192.168.100.2\\target"
+TARGET_DIR = '\\\\192.168.100.2\\target'
 
 backupdir.archive_local(SOURCE_DIR, TARGET_DIR)
 
